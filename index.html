@@ -253,7 +253,7 @@
     color:var(--paper);
   }
   .how .kicker{color:var(--lime);}
-  .how .section-head p{color:var(--paper-dim);}
+  .how .section-head p{color:#F7F5EC;}
   .steps{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -283,7 +283,7 @@
     text-transform:none;
     font-weight:400;
     font-size:0.9rem;
-    color:var(--paper-dim);
+    color:#F0EEE3;
     margin-top:10px;
   }
 
@@ -577,7 +577,7 @@
 <header>
   <div class="wrap header-inner">
     <div class="brand">
-      <img src="feem_185ae9417c6f5_IMG-20260909-WA0000.jpg" alt="Community Agenda for Peace logo">
+      <img src="assets/logo.jpg" alt="Community Agenda for Peace logo">
       <div class="brand-text">The Road Reporters<span>Community Agenda for Peace</span></div>
     </div>
     <a class="header-cta" href="https://forms.gle/9vV73nN4FZEjFqXk9" target="_blank" rel="noopener">Register Now</a>
@@ -753,8 +753,8 @@
 
 <script>
 (function(){
-  
-  const WORKER_URL = "https://roadreporters-plegde.sweep-a4a.workers.dev";
+  // ---- CHANGE THIS after you deploy the Worker (see worker.js) ----
+  const WORKER_URL = "https://roadreporters-pledge.YOUR-SUBDOMAIN.workers.dev";
 
   const canvas = document.getElementById('sigPad');
   const ctx = canvas.getContext('2d');
